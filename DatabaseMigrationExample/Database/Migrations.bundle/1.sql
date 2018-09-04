@@ -1,0 +1,4 @@
+CREATE TABLE Movies (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT
+);

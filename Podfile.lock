@@ -1,0 +1,23 @@
+PODS:
+  - SQLite.swift (0.11.5):
+    - SQLite.swift/standard (= 0.11.5)
+  - SQLite.swift/standard (0.11.5)
+  - SQLiteMigrationManager.swift (0.3.0):
+    - SQLite.swift (~> 0.11.0)
+
+DEPENDENCIES:
+  - SQLite.swift
+  - SQLiteMigrationManager.swift
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - SQLite.swift
+    - SQLiteMigrationManager.swift
+
+SPEC CHECKSUMS:
+  SQLite.swift: 6e5356850bb1791459f8c16d6ee9195b28714a2e
+  SQLiteMigrationManager.swift: cf85e5825575e1ec1e5c470800feb53eee6e64cf
+
+PODFILE CHECKSUM: 78fc8ab56e6b0e234d0c9ea932dc170c0f7691cb
+
+COCOAPODS: 1.5.3

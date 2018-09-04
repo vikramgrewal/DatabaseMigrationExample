@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		093C597A519C7182606EE351 /* Pods_DatabaseMigrationExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A67D7AAA8C4DCEEA6AD9FAF /* Pods_DatabaseMigrationExample.framework */; };
+		E614968F213F2C24008EE60C /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = E614968E213F2C24008EE60C /* Database.swift */; };
+		E67F6777213F49A100AE7E35 /* Migrations.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E67F6776213F49A100AE7E35 /* Migrations.bundle */; };
+		E67F6789213F4D6700AE7E35 /* SeedDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67F6788213F4D6700AE7E35 /* SeedDB.swift */; };
 		E6E77893213F28DA00A14C4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E77892213F28DA00A14C4B /* AppDelegate.swift */; };
 		E6E77895213F28DA00A14C4B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E77894213F28DA00A14C4B /* ViewController.swift */; };
 		E6E77898213F28DA00A14C4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6E77896213F28DA00A14C4B /* Main.storyboard */; };
@@ -15,6 +19,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5CA0462A78D2BD7ACCC39E23 /* Pods-DatabaseMigrationExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DatabaseMigrationExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-DatabaseMigrationExample/Pods-DatabaseMigrationExample.release.xcconfig"; sourceTree = "<group>"; };
+		7A67D7AAA8C4DCEEA6AD9FAF /* Pods_DatabaseMigrationExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DatabaseMigrationExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E614968E213F2C24008EE60C /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		E67F6776213F49A100AE7E35 /* Migrations.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Migrations.bundle; sourceTree = "<group>"; };
+		E67F6788213F4D6700AE7E35 /* SeedDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeedDB.swift; sourceTree = "<group>"; };
 		E6E7788F213F28DA00A14C4B /* DatabaseMigrationExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DatabaseMigrationExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6E77892213F28DA00A14C4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E6E77894213F28DA00A14C4B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +31,7 @@
 		E6E77899213F28DB00A14C4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E6E7789C213F28DB00A14C4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E6E7789E213F28DB00A14C4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAE790ED047D375D97212E53 /* Pods-DatabaseMigrationExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DatabaseMigrationExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DatabaseMigrationExample/Pods-DatabaseMigrationExample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +39,47 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				093C597A519C7182606EE351 /* Pods_DatabaseMigrationExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C408EF7C521CFA39EA4DA867 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7A67D7AAA8C4DCEEA6AD9FAF /* Pods_DatabaseMigrationExample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E614969B213F4578008EE60C /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				E67F678B213F4DC600AE7E35 /* Migrations */,
+				E67F6776213F49A100AE7E35 /* Migrations.bundle */,
+				E614968E213F2C24008EE60C /* Database.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		E67F678B213F4DC600AE7E35 /* Migrations */ = {
+			isa = PBXGroup;
+			children = (
+				E67F6788213F4D6700AE7E35 /* SeedDB.swift */,
+			);
+			name = Migrations;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		E6E77886213F28D900A14C4B = {
 			isa = PBXGroup;
 			children = (
 				E6E77891213F28DA00A14C4B /* DatabaseMigrationExample */,
 				E6E77890213F28DA00A14C4B /* Products */,
+				EF5E7022CA65E36DFD569421 /* Pods */,
+				C408EF7C521CFA39EA4DA867 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +94,7 @@
 		E6E77891213F28DA00A14C4B /* DatabaseMigrationExample */ = {
 			isa = PBXGroup;
 			children = (
+				E614969B213F4578008EE60C /* Database */,
 				E6E77892213F28DA00A14C4B /* AppDelegate.swift */,
 				E6E77894213F28DA00A14C4B /* ViewController.swift */,
 				E6E77896213F28DA00A14C4B /* Main.storyboard */,
@@ -64,6 +105,15 @@
 			path = DatabaseMigrationExample;
 			sourceTree = "<group>";
 		};
+		EF5E7022CA65E36DFD569421 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FAE790ED047D375D97212E53 /* Pods-DatabaseMigrationExample.debug.xcconfig */,
+				5CA0462A78D2BD7ACCC39E23 /* Pods-DatabaseMigrationExample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +121,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E6E778A1213F28DB00A14C4B /* Build configuration list for PBXNativeTarget "DatabaseMigrationExample" */;
 			buildPhases = (
+				7E5833F14A8ADB7734F0666E /* [CP] Check Pods Manifest.lock */,
 				E6E7788B213F28D900A14C4B /* Sources */,
 				E6E7788C213F28D900A14C4B /* Frameworks */,
 				E6E7788D213F28D900A14C4B /* Resources */,
+				DAF583BBF38786BB67C6C842 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,18 +176,62 @@
 			files = (
 				E6E7789D213F28DB00A14C4B /* LaunchScreen.storyboard in Resources */,
 				E6E7789A213F28DB00A14C4B /* Assets.xcassets in Resources */,
+				E67F6777213F49A100AE7E35 /* Migrations.bundle in Resources */,
 				E6E77898213F28DA00A14C4B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7E5833F14A8ADB7734F0666E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DatabaseMigrationExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DAF583BBF38786BB67C6C842 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DatabaseMigrationExample/Pods-DatabaseMigrationExample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework",
+				"${BUILT_PRODUCTS_DIR}/SQLiteMigrationManager.swift/SQLiteMigrationManager.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLite.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLiteMigrationManager.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DatabaseMigrationExample/Pods-DatabaseMigrationExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E6E7788B213F28D900A14C4B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E614968F213F2C24008EE60C /* Database.swift in Sources */,
 				E6E77895213F28DA00A14C4B /* ViewController.swift in Sources */,
+				E67F6789213F4D6700AE7E35 /* SeedDB.swift in Sources */,
 				E6E77893213F28DA00A14C4B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,6 +374,7 @@
 		};
 		E6E778A2213F28DB00A14C4B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAE790ED047D375D97212E53 /* Pods-DatabaseMigrationExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,6 +393,7 @@
 		};
 		E6E778A3213F28DB00A14C4B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CA0462A78D2BD7ACCC39E23 /* Pods-DatabaseMigrationExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
